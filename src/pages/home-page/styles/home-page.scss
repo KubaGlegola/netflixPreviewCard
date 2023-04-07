@@ -1,0 +1,130 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+///
+///
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary-color-900);
+}
+
+.preview-card {
+  width: 343px;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 24px;
+  background: var(--primary-color-500);
+
+  & &__image-container {
+    height: 311px;
+    background-image: url("/images/episode-cover.jpg");
+    background-size: cover;
+    background-position: -75px 0px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  & &__image {
+    width: 136px;
+    height: 80px;
+    margin: auto auto 16px 16px;
+  }
+
+  & &__content {
+    margin: 24px 0 18px;
+  }
+
+  & &__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+  }
+
+  & &__name-and-time {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color-200);
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    padding-bottom: 29px;
+    margin-bottom: 24px;
+    border-bottom: 1.5px solid var(--primary-color-400);
+  }
+
+  & &__name {
+    line-height: 22px;
+  }
+
+  & &__time {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  & &__show-cover-and-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  & &__show-info-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.4em;
+    letter-spacing: -0.02em;
+    color: var(--primary-color-200);
+  }
+
+  & &__show-cover-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 90px;
+    overflow: hidden;
+  }
+
+  & &__show-info-dot-spacer {
+    display: flex;
+  }
+
+  @media (min-width: 834px) {
+    width: 413px;
+
+    & &__image-container {
+      height: 381px;
+      background-position: -110px 0px;
+    }
+
+    & &__image {
+      width: 176px;
+      height: 104px;
+      margin: auto auto 24px 24px;
+    }
+
+    & &__content {
+      padding: 0 8px 0 16px;
+    }
+
+    & &__title {
+      margin-bottom: 12px;
+    }
+
+    & &__name-and-time {
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+
+    & &__show-info-text {
+      margin-right: 8px;
+    }
+  }
+}
